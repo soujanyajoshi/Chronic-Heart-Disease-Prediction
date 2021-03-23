@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title>
+    Chronic Heart Disease prediction
+</title>
+
+<body>
+
+
+
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h1 class="header center orange-text">Chronic heart disease prediction</h1>
+            <div class="row center">
+                <h5 class="header col s12 light">Predict the probability of Chronic heart disease
+                    <br>
+                </h5>
+            </div>
+
+            <div class="row">
+                <form action='/predict' method="post" class="col s12">
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <label for="col1"><b>Gender</b></label>
+                            <br>
+                            <input placeholder="Gender-Enter 0 for female and  1 for male" name="Gender" id="col1" type="text" class="validate">
+                            <br> <br>
+                        </div>
+                        <div class="input-field col s4">
+
+                            <label for="col2"><b>Age </b></label>
+                            <br>
+                            <input id="col2" name="Age" placeholder="Age in years" type="text" class="validate">
+                            <br> <br>
+                        </div>
+
+                        <div class="input-field col s4">
+
+                            <label for="col2"><b>Current Smoker</b></label>
+                            <br>
+                            <input id="col2" name="Cuurent Smoker?" placeholder="Enter 0 is not a smoker and 1 if active smoker" type="text" class="validate">
+                            <br> <br>
+                        </div>
+
+                        <div class="input-field col s4">
+                            <label for="col3"><b>Number of cigarettes</b></label>
+                            <br>
+                            <input id="col3" name="Number of cigarettes" placeholder="Enter the the number of cigarettes you smoke on average in one day" type="text" class="validate">
+                            <br> <br>
+                        </div>
+
+                        <div class="input-field col s4">
+                            <label for="col4"><b>BP</b></label>
+                            <br>
+                            <input id="col4" name="BP" placeholder="Enter 0 if you haven't been on a blood pressure medication else select 1 if you have been on a blood pressure medication" type="text" class="validate">
+                            <br> <br>
+                        </div>
+
+
+                        <div class="input-field col s4">
+                            <label for="col5"><b>Stroke</b></label>
+                            <br>
+                            <input id="col5" name="Stroke" placeholder="Enter 0 if you have never had a stroke else enter 1 if you have previously had a stroke" type="text" class="validate">
+                            <br> <br>
+                        </div>
+
+                        <div class="input-field col s4">
+                            <label for="col6"><b>Hypertensive</b></label>
+                            <br>
+                            <input id="col6" name="Hypertensive" placeholder="Enter 0 if you have never had a high BP else enter 1 if you have had a high BP" type="text" class="validate">
+                            <br> <br>
+                        </div>
+
+                        <div class="input-field col s4">
+                            <label for="col7"><b>Diabetes</b></label>
+                            <br>
+                            <input id="col7" name="Diabetes" placeholder="Enter 0 if you have had diabetes else enter 1 if you have diabetes" type="text" class="validate">
+                            <br> <br>
+                        </div>
+
+                        <div class="input-field col s4">
+                            <label for="col8"><b>Cholestrol level</b></label>
+                            <br>
+                            <input id="col8" name="Cholestrol level" placeholder="Enter your cholestrol level" type="text" class="validate">
+                            <br> <br>
+                        </div>
+
+                        <div class="input-field col s4">
+                            <label for="col9"><b>Systolic blood pressure</b></label>
+                            <br>
+                            <input id="col9" name="Systolic blood pressure" placeholder="Enter your systolic blood pressure" type="text" class="validate">
+                            <br> <br>
+                        </div>
+
+                        <div class="input-field col s4">
+                            <label for="col10"><b>Diastolic blood pressure</b></label>
+                            <br>
+                            <input id="col10" name="Diastolic blood pressure" placeholder="Enter your diastolic blood pressure" type="text" class="validate">
+                            <br> <br>
+                        </div>
+
+                        <div class="input-field col s4">
+                            <label for="col13"><b>Body Mass Index</b></label>
+                            <br>
+                            <input id="col13" name="Body Mass Index" placeholder="Enter your Body Mass Index" type="text" class="validate">
+                            <br> <br>
+                        </div>
+
+                        <div class="input-field col s4">
+                            <label for="col11"><b>Heart rate</b></label>
+                            <br>
+                            <input id="col11" name="Heart rate" placeholder="Enter your heart rate" type="text" class="validate">
+                            <br> <br>
+                        </div>
+
+                        <div class="input-field col s4">
+                            <label for="col12"><b>Glucose level</b></label>
+                            <br>
+                            <input id="col12" name="Glucose level" placeholder="Enter your glucose level" type="text" class="validate">
+                            <br> <br>
+                        </div>
+
+                    </div>
+
+                    <div class="row center">
+                        <button type="submit" class="btn-large waves-effect waves-light orange">Predict Probability</button>
+                    </div>
+                </form>
+            </div>
+
+            <br>
+            <br>
+            <div> {{ pred }} </div>
+        </div>
+    </div>
+
+
+    <br><br>
+    </div>
+    </div>
+
+</body>
+
+</html>
